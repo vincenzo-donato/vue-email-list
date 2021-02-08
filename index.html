@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Esercitazione Axios Email</title>
+    <!-- LINK: Vue JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- LINK: Axios/Ajax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
+    <!-- LINK: Foglio di stile -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+        <!-- CONTENITORE: Box su cui applico Vue js  -->
+        <div id="container">
+
+            <h1>Registrati</h1>
+
+            <input type="email" name= "email" placeholder="inserisci la tua  Email@" v-model='registrazione'>
+
+            <button @click='registra'>Registrati</button>
+    
+            <p>Utenti registrati:</p>
+
+            <ul>
+                <li v-for = 'email in emailRandom'>{{email}}</li>
+            </ul>
+
+        </div>
+        <!--FINE CONTENITORE: Box su cui applico Vue js  -->
+
+    <!-- LINK: Script Javascript -->
+    <script src="js/script.js" charset="utf-8"></script>
+
+</body>
+
+</html>
